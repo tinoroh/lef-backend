@@ -28,7 +28,7 @@ app.get("/dummyData/create", (req: any, res: any) => {
 });
 
 
-// passport stuff
+// passport stuff, propably goes into passport.ts
 const session = require('express-session');
 const LocalStrategy = passportLocal.Strategy;
 app.use(session({ secret: 'secret' })); // session secret
